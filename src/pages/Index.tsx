@@ -5,28 +5,15 @@ import HeroSection from "@/components/HeroSection";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Link } from "react-router-dom";
+import TourFeatures from "@/components/TourFeatures";
 
 const featuredTours = [
   {
     id: "siberian-horizons",
-    title: "Сибирские Горизонты",
+    title: "Сибирский путь к успеху",
     description: "7-дневный бизнес-тур по Транссибирской магистрали для инвесторов и предпринимателей",
-    image: "https://images.unsplash.com/photo-1520254268439-36951222e541?auto=format&fit=crop&q=80",
+    image: "https://n1s1.hsmedia.ru/ee/46/4a/ee464af0ce41e48098a10eb4437fcecf/2700x1800_0xeYJhLN6q_9675051787780053130.jpg",
     price: "от 350 000 ₽"
-  },
-  {
-    id: "golden-ring",
-    title: "Золотое кольцо",
-    description: "5-дневный тур по историческим городам центральной России с фокусом на культурное наследие",
-    image: "https://images.unsplash.com/photo-1577629325142-3f11de95a5e9?auto=format&fit=crop&q=80",
-    price: "от 120 000 ₽"
-  },
-  {
-    id: "northern-lights",
-    title: "Северное сияние",
-    description: "6-дневный тур на Кольский полуостров с наблюдением за северным сиянием и деловыми встречами",
-    image: "https://images.unsplash.com/photo-1577655195796-5d0d6507022d?auto=format&fit=crop&q=80",
-    price: "от 230 000 ₽"
   }
 ];
 
@@ -58,7 +45,7 @@ const Index = () => {
               Популярные туры
             </h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-1 gap-8 max-w-2xl mx-auto">
               {featuredTours.map((tour) => (
                 <Card key={tour.id} className="overflow-hidden hover:shadow-xl transition-shadow">
                   <div className="h-48 overflow-hidden">
@@ -83,7 +70,7 @@ const Index = () => {
             </div>
           </div>
         </section>
-        
+        <TourFeatures />
         {/* About Us Section */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">

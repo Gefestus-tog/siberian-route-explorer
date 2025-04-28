@@ -58,17 +58,17 @@ const Contacts = () => {
               <div className="space-y-4 mb-8">
                 <div>
                   <h3 className="font-bold text-tour-blue">Адрес</h3>
-                  <p>г. Москва, ул. Тверская, 1</p>
+                  <p>г. Москва, Пресненская наб., 8, стр. 1</p>
                 </div>
                 
                 <div>
                   <h3 className="font-bold text-tour-blue">Телефон</h3>
-                  <p>+7 (495) 123-45-67</p>
+                  <p>+7 (999) 996-38-38</p>
                 </div>
                 
                 <div>
                   <h3 className="font-bold text-tour-blue">Email</h3>
-                  <p>info@tuda-suda.ru</p>
+                  <p>oppoosite23@gmail.com</p>
                 </div>
                 
                 <div>
@@ -82,7 +82,7 @@ const Contacts = () => {
                 <h3 className="text-xl font-bold mb-4 text-tour-dark-blue">Как нас найти</h3>
                 <div className="rounded-lg overflow-hidden h-64 shadow-md">
                   <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.397087831824!2d37.59856937680372!3d55.76807997346455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a4c9a359dd3%3A0x628904c029ba3b94!2z0YPQuy4g0KLQstC10YDRgdC60LDRjywgMSwg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEyNTAwOQ!5e0!3m2!1sru!2s!4v1719611045598!5m2!1sru!2s" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.317144755983!2d37.53943357680296!3d55.7483599750736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54bf0ae5dc3a3%3A0x4ddbd7b2e4a07a3e!2z0J_RgNC10YHQvdC10L3RgdC60LDRjyDQvdCw0YbQsCwgOCDQutGA0LDRjyAxLCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTIzMzE2!5e0!3m2!1sru!2s!4v1719611045598!5m2!1sru!2s" 
                     width="100%" 
                     height="100%" 
                     style={{ border: 0 }} 
@@ -165,7 +165,7 @@ const Contacts = () => {
                   Если у вас есть вопросы о наших турах или вы хотите получить индивидуальное 
                   предложение, позвоните нам или оставьте свои контакты, и мы перезвоним вам.
                 </p>
-                <div className="text-xl font-bold text-tour-gold">+7 (495) 123-45-67</div>
+                <div className="text-xl font-bold text-tour-gold">+7 (906) 477-77-93</div>
               </div>
             </div>
           </div>

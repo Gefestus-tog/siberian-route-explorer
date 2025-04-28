@@ -18,9 +18,9 @@ const Footer = () => {
           
           <div>
             <h3 className="text-xl font-bold mb-4">Контакты</h3>
-            <p className="text-gray-300 mb-2">Адрес: г. Москва, ул. Тверская, 1</p>
-            <p className="text-gray-300 mb-2">Телефон: +7 (495) 123-45-67</p>
-            <p className="text-gray-300 mb-2">Email: info@tuda-suda.ru</p>
+            <p className="text-gray-300 mb-2">Адрес: г. Москва, Пресненская наб., 8, стр. 1</p>
+            <p className="text-gray-300 mb-2">Телефон: +7 (999) 996-38-38</p>
+            <p className="text-gray-300 mb-2">Email: oppoosite23@gmail.com</p>
           </div>
           
           <div>

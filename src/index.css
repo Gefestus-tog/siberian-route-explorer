@@ -108,11 +108,11 @@
 
   .route-arrow::after {
     content: "→";
-    @apply text-white text-xl font-bold absolute;
+    @apply text-white text-2xl font-bold absolute;
   }
 
   .route-arrow:hover {
-    @apply h-3 bg-tour-light-blue;
+    @apply h-6 bg-tour-light-blue;
   }
 }
 

@@ -63,7 +63,7 @@ const cities: City[] = [
       "Посещение Иркутского художественного музея"
     ],
     accommodation: "RODINA Grand Hotel & SPA Irkutsk",
-    image: "https://images.unsplash.com/photo-1551845041-63e8e76836ce?auto=format&fit=crop&q=80"
+    image: "https://static7.vivoo.ru/datas/photos/750x750/a9/9b/77b7c48d2b695349adf0694a738d.jpg?1"
   },
   {
     name: "Хабаровск",
@@ -86,7 +86,7 @@ const cities: City[] = [
       "Шоппинг или экскурсия на Русский мост"
     ],
     accommodation: "VLADIVOSTOK Grand Hotel & SPA",
-    image: "https://images.unsplash.com/photo-1627843240167-b1f9309c4ecb?auto=format&fit=crop&q=80"
+    image: "https://i1.sndcdn.com/artworks-000608493016-zl1bqk-t1080x1080.jpg"
   }
 ];
 
@@ -105,7 +105,7 @@ const transports: Transport[] = [
     type: "Поезд",
     details: "Поезд 056М, купе повышенной комфортности",
     duration: "22 часа",
-    image: "https://images.unsplash.com/photo-1474302770737-173ee21bab63?auto=format&fit=crop&q=80"
+    image: "https://avatars.mds.yandex.net/i?id=222964c65214e87b05370d3788f4067a396b1a98-4260084-images-thumbs&n=13"
   },
   {
     from: "Новосибирск",
@@ -113,7 +113,7 @@ const transports: Transport[] = [
     type: "Поезд",
     details: "Поезд 002Э, купе повышенной комфортности",
     duration: "31 час",
-    image: "https://images.unsplash.com/photo-1516550893885-985c87f37b4a?auto=format&fit=crop&q=80"
+    image: "https://avatars.mds.yandex.net/i?id=e295df0ae8e24ddcb2163e173156d25f64a8677f-4220229-images-thumbs&n=13"
   },
   {
     from: "Иркутск",
@@ -121,7 +121,7 @@ const transports: Transport[] = [
     type: "Поезд",
     details: "Поезд 002Э, купе повышенной комфортности",
     duration: "55 часов",
-    image: "https://images.unsplash.com/photo-1553522151-f1a8ff3e2b38?auto=format&fit=crop&q=80"
+    image: "https://avatars.mds.yandex.net/i?id=6c4956dc7808a03b06df3bb93a822173659292b5-12623687-images-thumbs&n=13"
   },
   {
     from: "Хабаровск",
@@ -129,7 +129,7 @@ const transports: Transport[] = [
     type: "Поезд",
     details: "Поезд 006Э \"Океан\", СВ",
     duration: "12 часов",
-    image: "https://images.unsplash.com/photo-1553616382-a686c2d82e2f?auto=format&fit=crop&q=80"
+    image: "https://avatars.mds.yandex.net/i?id=08465394fa97bcf9da994f480449eb95602a7a2f-9182224-images-thumbs&n=13"
   }
 ];
 
@@ -163,7 +163,7 @@ const TransSibRoute = () => {
                 onClick={() => handleCityClick(city)}
                 title={city.name}
               >
-                <div className="city-label absolute -bottom-7 text-center w-20 -left-7 text-sm font-medium text-tour-dark-blue">
+                <div className="city-label absolute -bottom-8 text-center w-24 -left-9 text-sm font-medium text-tour-dark-blue">
                   {city.name}
                 </div>
               </div>
