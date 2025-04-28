@@ -12,7 +12,7 @@ const featuredTours = [
     id: "siberian-horizons",
     title: "Сибирский путь к успеху",
     description: "7-дневный бизнес-тур по Транссибирской магистрали для инвесторов и предпринимателей",
-    image: "https://n1s1.hsmedia.ru/ee/46/4a/ee464af0ce41e48098a10eb4437fcecf/2700x1800_0xeYJhLN6q_9675051787780053130.jpg",
+    image: "https://avatars.mds.yandex.net/i?id=fd89e60c6eac00a7a187bea93d1c990656374194-4755486-images-thumbs&n=13",
     price: "от 350 000 ₽"
   }
 ];
