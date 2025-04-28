@@ -3,8 +3,6 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import TransSibRoute from "@/components/TransSibRoute";
 import TourFeatures from "@/components/TourFeatures";
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
 
 const TourDetail = () => {
   return (
@@ -25,7 +23,7 @@ const TourDetail = () => {
           
           <div className="container mx-auto px-4 h-full flex items-center relative z-10">
             <div className="text-white max-w-2xl">
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">Бизнес-тур "Сибирские Горизонты"</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-4">Бизнес-тур "Сибирский путь к успеху"</h1>
               <p className="text-xl mb-2">7 дней | Москва - Владивосток</p>
               <p className="text-xl font-bold text-tour-gold">от 350 000 ₽</p>
             </div>
@@ -37,17 +35,17 @@ const TourDetail = () => {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <Card className="p-6 shadow-md">
-                <h3 className="text-lg font-bold mb-2 text-tour-blue">Целевая аудитория</h3>
+                <h3 className="text-lg font-bold mb-2 text-tour-dark-blue">Целевая аудитория</h3>
                 <p>Инвесторы, бизнесмены, представители крупных компаний</p>
               </Card>
               
               <Card className="p-6 shadow-md">
-                <h3 className="text-lg font-bold mb-2 text-tour-blue">Слоган</h3>
+                <h3 className="text-lg font-bold mb-2 text-tour-dark-blue">Слоган</h3>
                 <p>Инвестиции в будущее, богатое опытом</p>
               </Card>
               
               <Card className="p-6 shadow-md">
-                <h3 className="text-lg font-bold mb-2 text-tour-blue">Продолжительность</h3>
+                <h3 className="text-lg font-bold mb-2 text-tour-dark-blue">Продолжительность</h3>
                 <p>7 дней / 6 ночей</p>
               </Card>
             </div>
@@ -60,7 +58,7 @@ const TourDetail = () => {
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl font-bold mb-6 text-tour-dark-blue">Описание тура</h2>
               <p className="text-lg mb-4">
-                Уникальный бизнес-тур "Сибирские Горизонты" – это поездка по Транссибирской 
+                Уникальный бизнес-тур "Сибирский путь к успеху" – это поездка по Транссибирской 
                 магистрали, созданная специально для деловых людей, инвесторов и представителей 
                 крупных компаний. В течение 7 дней вы пересечете всю Россию от Москвы до 
                 Владивостока, посетив ключевые экономические и культурные центры.
@@ -81,22 +79,14 @@ const TourDetail = () => {
         {/* Tour Features */}
         <TourFeatures />
         
-        {/* Booking Information */}
+        {/* Contact Information */}
         <div className="py-16 bg-tour-dark-blue text-white">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-4">Забронировать тур</h2>
+            <h2 className="text-3xl font-bold mb-4">Для получения дополнительной информации</h2>
             <p className="text-xl mb-8 max-w-2xl mx-auto">
-              Для бронирования тура "Сибирские Горизонты" свяжитесь с нашими менеджерами. 
+              Для уточнения деталей тура "Сибирский путь к успеху" свяжитесь с нашими менеджерами.
               Мы также можем адаптировать программу под ваши индивидуальные потребности.
             </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Button size="lg" className="bg-tour-gold hover:bg-tour-red text-white">
-                Забронировать
-              </Button>
-              <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-tour-dark-blue">
-                Связаться с менеджером
-              </Button>
-            </div>
           </div>
         </div>
       </main>
@@ -105,5 +95,7 @@ const TourDetail = () => {
     </>
   );
 };
+
+import { Card } from "@/components/ui/card";
 
 export default TourDetail;

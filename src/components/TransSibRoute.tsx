@@ -7,7 +7,6 @@ type City = {
   name: string;
   activities: string[];
   accommodation: string;
-  price: string;
   image: string;
 };
 
@@ -17,7 +16,6 @@ type Transport = {
   type: string;
   details: string;
   duration: string;
-  price: string;
   image: string;
 };
 
@@ -32,7 +30,6 @@ const cities: City[] = [
       "Экскурсия по Красной площади и Кремлю"
     ],
     accommodation: "Отель RODINA Grand Hotel & SPA",
-    price: "69 400₽/сутки",
     image: "https://images.unsplash.com/photo-1513326738677-b964603b136d?auto=format&fit=crop&q=80"
   },
   {
@@ -45,7 +42,6 @@ const cities: City[] = [
       "Экскурсия к Храму-на-Крови"
     ],
     accommodation: "Hyatt Regency Ekaterinburg 5*",
-    price: "25 500₽/сутки",
     image: "https://images.unsplash.com/photo-1594397394907-096148b9d1c9?auto=format&fit=crop&q=80"
   },
   {
@@ -57,7 +53,6 @@ const cities: City[] = [
       "Спектакль в Театре оперы и балета"
     ],
     accommodation: "Grand Autograph Hotel Novosibirsk",
-    price: "30 200₽/сутки",
     image: "https://images.unsplash.com/photo-1589122758779-0df750e72d2c?auto=format&fit=crop&q=80"
   },
   {
@@ -68,7 +63,6 @@ const cities: City[] = [
       "Посещение Иркутского художественного музея"
     ],
     accommodation: "RODINA Grand Hotel & SPA Irkutsk",
-    price: "43 120₽/сутки",
     image: "https://images.unsplash.com/photo-1551845041-63e8e76836ce?auto=format&fit=crop&q=80"
   },
   {
@@ -80,7 +74,6 @@ const cities: City[] = [
       "Ужин в ресторане Амур"
     ],
     accommodation: "Отель RUMA",
-    price: "42 400₽/сутки",
     image: "https://images.unsplash.com/photo-1544985361-b420d7a77043?auto=format&fit=crop&q=80"
   },
   {
@@ -93,7 +86,6 @@ const cities: City[] = [
       "Шоппинг или экскурсия на Русский мост"
     ],
     accommodation: "VLADIVOSTOK Grand Hotel & SPA",
-    price: "41 927₽/сутки",
     image: "https://images.unsplash.com/photo-1627843240167-b1f9309c4ecb?auto=format&fit=crop&q=80"
   }
 ];
@@ -105,7 +97,6 @@ const transports: Transport[] = [
     type: "Самолет",
     details: "Авиаперелет бизнес-классом из аэропорта Домодедово",
     duration: "2 часа",
-    price: "от 25 000₽",
     image: "https://images.unsplash.com/photo-1569154941061-e231b4725ef1?auto=format&fit=crop&q=80"
   },
   {
@@ -114,7 +105,6 @@ const transports: Transport[] = [
     type: "Поезд",
     details: "Поезд 056М, купе повышенной комфортности",
     duration: "22 часа",
-    price: "от 3 500₽",
     image: "https://images.unsplash.com/photo-1474302770737-173ee21bab63?auto=format&fit=crop&q=80"
   },
   {
@@ -123,7 +113,6 @@ const transports: Transport[] = [
     type: "Поезд",
     details: "Поезд 002Э, купе повышенной комфортности",
     duration: "31 час",
-    price: "от 5 857₽",
     image: "https://images.unsplash.com/photo-1516550893885-985c87f37b4a?auto=format&fit=crop&q=80"
   },
   {
@@ -132,7 +121,6 @@ const transports: Transport[] = [
     type: "Поезд",
     details: "Поезд 002Э, купе повышенной комфортности",
     duration: "55 часов",
-    price: "от 5 857₽",
     image: "https://images.unsplash.com/photo-1553522151-f1a8ff3e2b38?auto=format&fit=crop&q=80"
   },
   {
@@ -141,7 +129,6 @@ const transports: Transport[] = [
     type: "Поезд",
     details: "Поезд 006Э \"Океан\", СВ",
     duration: "12 часов",
-    price: "от 7 000₽",
     image: "https://images.unsplash.com/photo-1553616382-a686c2d82e2f?auto=format&fit=crop&q=80"
   }
 ];
@@ -164,10 +151,10 @@ const TransSibRoute = () => {
   return (
     <div className="my-10">
       <h2 className="text-3xl font-bold text-center mb-8 text-tour-dark-blue">
-        Маршрут бизнес-тура "Сибирские Горизонты"
+        Маршрут бизнес-тура "Сибирский путь к успеху"
       </h2>
       
-      <div className="mb-8">
+      <div className="mb-12">
         <div className="route-map flex items-center justify-between max-w-4xl mx-auto px-4">
           {cities.map((city, index) => (
             <div key={city.name} className="flex items-center">
@@ -194,7 +181,7 @@ const TransSibRoute = () => {
       </div>
       
       <div className="route-info text-center mb-8">
-        <p className="text-xl font-medium text-tour-blue">
+        <p className="text-xl font-medium text-tour-dark-blue">
           От столицы России до берегов Тихого океана
         </p>
       </div>
@@ -209,7 +196,6 @@ const TransSibRoute = () => {
                   <div className="mb-4">
                     <h4 className="font-semibold text-tour-blue mb-2">Проживание:</h4>
                     <p>{activeCity.accommodation}</p>
-                    <p className="text-tour-gold font-medium">{activeCity.price}</p>
                   </div>
                   <div>
                     <h4 className="font-semibold text-tour-blue mb-2">Программа:</h4>
@@ -245,10 +231,6 @@ const TransSibRoute = () => {
                     <div className="mb-4">
                       <h4 className="font-semibold text-tour-blue mb-2">Время в пути:</h4>
                       <p>{activeTransport.duration}</p>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-tour-blue mb-2">Стоимость:</h4>
-                      <p className="text-tour-gold font-medium">{activeTransport.price}</p>
                     </div>
                   </div>
                   <div className="md:w-1/2">

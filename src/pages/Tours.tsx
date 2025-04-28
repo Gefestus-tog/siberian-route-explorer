@@ -8,44 +8,14 @@ import { Link } from "react-router-dom";
 const tours = [
   {
     id: "siberian-horizons",
-    title: "Сибирские Горизонты",
+    title: "Сибирский путь к успеху",
     subtitle: "Бизнес-тур по Транссибу",
     description: "7-дневный бизнес-тур по Транссибирской магистрали для инвесторов и предпринимателей с посещением 6 крупнейших городов России",
     image: "https://images.unsplash.com/photo-1520254268439-36951222e541?auto=format&fit=crop&q=80",
     price: "от 350 000 ₽",
     days: 7,
     cities: ["Москва", "Екатеринбург", "Новосибирск", "Иркутск", "Хабаровск", "Владивосток"]
-  },
-  {
-    id: "golden-ring",
-    title: "Золотое кольцо",
-    subtitle: "Бизнес и история",
-    description: "5-дневный тур по историческим городам центральной России с фокусом на культурное наследие и деловые возможности региона",
-    image: "https://images.unsplash.com/photo-1577629325142-3f11de95a5e9?auto=format&fit=crop&q=80",
-    price: "от 120 000 ₽",
-    days: 5,
-    cities: ["Москва", "Владимир", "Суздаль", "Ярославль", "Сергиев Посад"]
-  },
-  {
-    id: "northern-lights",
-    title: "Северное сияние",
-    subtitle: "Деловой тур на Север",
-    description: "6-дневный тур на Кольский полуостров с наблюдением за северным сиянием и деловыми встречами в регионе",
-    image: "https://images.unsplash.com/photo-1577655195796-5d0d6507022d?auto=format&fit=crop&q=80",
-    price: "от 230 000 ₽",
-    days: 6,
-    cities: ["Мурманск", "Териберка", "Кировск", "Апатиты"]
-  },
-  {
-    id: "caucasus-business",
-    title: "Деловой Кавказ",
-    subtitle: "Бизнес в горах",
-    description: "8-дневный тур по Северному Кавказу с акцентом на инвестиционные возможности и культурное разнообразие региона",
-    image: "https://images.unsplash.com/photo-1634279048415-a191996e5731?auto=format&fit=crop&q=80",
-    price: "от 280 000 ₽",
-    days: 8,
-    cities: ["Пятигорск", "Кисловодск", "Сочи", "Грозный", "Владикавказ"]
-  },
+  }
 ];
 
 const Tours = () => {
@@ -82,7 +52,7 @@ const Tours = () => {
                         </div>
                         <div className="text-right">
                           <p className="text-gray-500">{tour.days} дней</p>
-                          <p className="text-tour-gold font-bold">{tour.price}</p>
+                          <p className="text-tour-blue font-bold">{tour.price}</p>
                         </div>
                       </div>
                       <p className="text-gray-600 mb-4">{tour.description}</p>
@@ -98,7 +68,7 @@ const Tours = () => {
                       </div>
                     </div>
                     <div className="flex justify-end">
-                      <Button asChild className="bg-tour-gold hover:bg-tour-dark-blue text-white">
+                      <Button asChild className="bg-tour-blue hover:bg-tour-dark-blue text-white">
                         <Link to={`/tours/${tour.id}`}>Подробнее</Link>
                       </Button>
                     </div>

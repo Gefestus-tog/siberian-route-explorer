@@ -16,7 +16,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222 47% 25%;
+    --primary: 210 79% 46%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 45 70% 80%;
@@ -95,27 +95,24 @@
 
 @layer components {
   .route-dot {
-    @apply w-6 h-6 rounded-full bg-tour-gold border-2 border-white cursor-pointer z-10 relative transition-all;
+    @apply w-6 h-6 rounded-full bg-tour-light-blue border-2 border-white cursor-pointer z-10 relative transition-all;
   }
 
   .route-dot.active {
-    @apply w-8 h-8 bg-tour-gold animate-pulse-dot;
+    @apply w-8 h-8 bg-tour-blue animate-pulse-dot;
   }
 
   .route-arrow {
-    @apply h-0.5 bg-tour-gold flex-grow relative cursor-pointer transition-all flex items-center justify-center;
-  }
-
-  .route-arrow:hover {
-    @apply h-1 bg-tour-red;
+    @apply h-2 bg-tour-blue flex-grow relative cursor-pointer flex items-center justify-center;
   }
 
   .route-arrow::after {
     content: "→";
-    @apply text-tour-gold absolute text-xl font-bold opacity-0 transition-opacity duration-300;
+    @apply text-white text-xl font-bold absolute;
   }
 
-  .route-arrow:hover::after {
-    @apply opacity-100;
+  .route-arrow:hover {
+    @apply h-3 bg-tour-light-blue;
   }
 }
+

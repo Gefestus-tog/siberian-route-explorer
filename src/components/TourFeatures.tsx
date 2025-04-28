@@ -34,9 +34,9 @@ const TourFeatures = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => (
-            <Card key={index} className="p-6 border-t-4 border-tour-gold hover:shadow-lg transition-shadow">
+            <Card key={index} className="p-6 border-t-4 border-tour-blue hover:shadow-lg transition-shadow">
               <div className="text-4xl mb-4">{feature.icon}</div>
-              <h3 className="text-xl font-bold mb-2 text-tour-blue">{feature.title}</h3>
+              <h3 className="text-xl font-bold mb-2 text-tour-dark-blue">{feature.title}</h3>
               <p className="text-gray-600">{feature.description}</p>
             </Card>
           ))}

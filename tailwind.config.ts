@@ -64,12 +64,12 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				tour: {
-					'dark-blue': '#1A365D',
-					'blue': '#2B4C7E',
-					'gold': '#D4AF37',
-					'light-gold': '#F1E5AC',
-					'cream': '#FFF8E7',
-					'red': '#B7410E'
+					'dark-blue': '#0C4C91',  // Обновлено под цвет логотипа
+					'blue': '#1A73E9',       // Светлее основного синего
+					'light-blue': '#5BA0FF', // Еще светлее для акцентов
+					'gold': '#FFD700',       // Оставляем золотой для контраста
+					'cream': '#FFF8E7',      // Светлый фон
+					'red': '#B7410E'         // Оставляем для предупреждений
 				}
 			},
 			borderRadius: {
@@ -105,11 +105,11 @@ export default {
 				'pulse-dot': {
 					'0%, 100%': {
 						transform: 'scale(1)',
-						boxShadow: '0 0 0 0 rgba(212, 175, 55, 0.7)'
+						boxShadow: '0 0 0 0 rgba(26, 115, 233, 0.7)'  // Обновлено под новый цвет
 					},
 					'70%': {
 						transform: 'scale(1.1)',
-						boxShadow: '0 0 0 10px rgba(212, 175, 55, 0)'
+						boxShadow: '0 0 0 10px rgba(26, 115, 233, 0)'  // Обновлено под новый цвет
 					}
 				}
 			},
