@@ -103,7 +103,7 @@
   }
 
   .route-arrow {
-    @apply h-4 bg-tour-blue flex-grow relative cursor-pointer flex items-center justify-center min-w-[80px];
+    @apply h-4 bg-gray-400 dark:bg-tour-blue flex-grow relative cursor-pointer flex items-center justify-center min-w-[80px];
   }
 
   .route-arrow::after {
@@ -112,6 +112,6 @@
   }
 
   .route-arrow:hover {
-    @apply h-6 bg-tour-light-blue;
+    @apply h-6 bg-tour-dark-blue dark:bg-tour-light-blue;
   }
 }
