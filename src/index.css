@@ -103,16 +103,15 @@
   }
 
   .route-arrow {
-    @apply h-2 bg-tour-blue flex-grow relative cursor-pointer flex items-center justify-center;
+    @apply h-4 bg-tour-blue flex-grow relative cursor-pointer flex items-center justify-center min-w-[80px];
   }
 
   .route-arrow::after {
     content: "→";
-    @apply text-white text-xl font-bold absolute;
+    @apply text-white text-2xl font-bold absolute;
   }
 
   .route-arrow:hover {
-    @apply h-3 bg-tour-light-blue;
+    @apply h-6 bg-tour-light-blue;
   }
 }
-
