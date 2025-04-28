@@ -154,8 +154,8 @@ const TransSibRoute = () => {
         Маршрут бизнес-тура "Сибирский путь к успеху"
       </h2>
       
-      <div className="mb-16">
-        <div className="route-map flex items-center justify-between max-w-5xl mx-auto px-4 overflow-x-auto py-4">
+      <div className="mb-12">
+        <div className="route-map flex items-center justify-between max-w-4xl mx-auto px-4">
           {cities.map((city, index) => (
             <div key={city.name} className="flex items-center">
               <div 
@@ -163,7 +163,7 @@ const TransSibRoute = () => {
                 onClick={() => handleCityClick(city)}
                 title={city.name}
               >
-                <div className="city-label absolute -bottom-8 text-center w-24 -left-9 text-sm font-medium text-tour-dark-blue">
+                <div className="city-label absolute -bottom-7 text-center w-20 -left-7 text-sm font-medium text-tour-dark-blue">
                   {city.name}
                 </div>
               </div>

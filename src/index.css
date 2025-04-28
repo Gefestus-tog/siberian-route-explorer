@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -102,17 +103,16 @@
   }
 
   .route-arrow {
-    @apply h-4 flex-grow relative cursor-pointer flex items-center justify-center min-w-[80px];
-    background-color: #8E9196; /* Neutral gray that works in any theme */
+    @apply h-2 bg-tour-blue flex-grow relative cursor-pointer flex items-center justify-center;
   }
 
   .route-arrow::after {
     content: "→";
-    @apply text-white text-2xl font-bold absolute;
+    @apply text-white text-xl font-bold absolute;
   }
 
   .route-arrow:hover {
-    @apply h-6;
-    background-color: #1A73E9; /* Blue on hover for any theme */
+    @apply h-3 bg-tour-light-blue;
   }
 }
+
